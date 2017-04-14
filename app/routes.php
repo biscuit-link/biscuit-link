@@ -12,7 +12,7 @@ $router = new AltoRouter();
  */
 
 // Index page mapping
-$router->map('GET', '/', 'DefaultController::display', 'index');
+$router->map('GET', '/', 'BiscuitLinkController::displayIndex');
 
 // Hello World page
 $router->map('GET', '/hello', 'DefaultController::hello');
