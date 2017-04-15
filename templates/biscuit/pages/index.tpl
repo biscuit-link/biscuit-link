@@ -1,4 +1,4 @@
-{extends file="pages/_inc/master.tpl"}
+{extends file="biscuit/_inc/master.tpl"}
 {block name=head}{/block}
 
 {block name=body}
