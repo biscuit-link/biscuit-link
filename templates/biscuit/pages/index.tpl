@@ -2,7 +2,10 @@
 {block name=head}{/block}
 
 {block name=body}
-    <h1>Biscuit Link</h1>
+    <div class="main-title">
+        <h1>Biscuit Link</h1>
+        <p><em>A PHP framework for people who do not want to waste time.</em></p>
+    </div>
 {/block}
 
 {block name=js}{/block}

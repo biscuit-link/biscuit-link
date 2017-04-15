@@ -1,0 +1,11 @@
+.main-title {
+    text-align: center;
+}
+
+.main-title h1 {
+    font-size: 40pt;
+}
+
+.container.page-container {
+    margin-top: 45px;
+}
