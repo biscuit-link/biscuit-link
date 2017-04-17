@@ -21,6 +21,12 @@
     <p>Biscuit Link is a relatively new PHP framework, far from maturity level (although production ready!). We
         encourage you to come and contribute to the future development.</p>
     <p>Biscuit Link is fully open-source and free to use by everyone!</p>
+
+    <div class="text-center">
+        <a href="/docs" class="btn btn-lg btn-primary">
+            <i class="fa fa-book"></i> Get Started
+        </a>
+    </div>
 {/block}
 
 {block name=js}{/block}
