@@ -8,16 +8,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"">Biscuit Link</a>
+            <a class="navbar-brand" href="/">Biscuit Link</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="/"><i class="fa fa-rocket"></i> Getting Started</a>
+                <li>
+                    <a href="#" title="Coming Soon..."><del><i class="fa fa-code"></i> Development</del></a>
+                </li>
+                <li>
+                    <a href="#" title="Coming Soon..."><del><i class="fa fa-rocket"></i> Production</del></a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><i class="fa fa-book"></i> Docs <span class="caret"></span></a>
+                       aria-expanded="false"><del><i class="fa fa-book"></i> Docs </del><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><del>Getting Started</del></a>
@@ -35,6 +38,9 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" title="Coming Soon..."><del><i class="fa fa-flask"></i> Projects</del></a>
+                </li>
                 <li>
                     <a href="https://github.com/cajogos/biscuit-link" target="_blank"><i class="fa fa-github"></i> Fork Me!</a>
                 </li>
