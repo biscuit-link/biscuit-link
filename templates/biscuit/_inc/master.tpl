@@ -37,6 +37,13 @@
     {include file="biscuit/partials/navbar.tpl"}
 
     <div class="container page-container">
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <i class="fa fa-warning"></i> Hey there, thanks for coming. This website still in
+            development. Things may be broken, watch your step!
+        </div>
         {block name=body}{/block}
         {include file="biscuit/partials/footer.tpl"}
     </div>
