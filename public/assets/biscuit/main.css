@@ -1,3 +1,7 @@
+body {
+    overflow-y: scroll;
+}
+
 .main-title {
     text-align: center;
 }
@@ -8,4 +12,10 @@
 
 .container.page-container {
     margin-top: 45px;
+}
+
+footer {
+    border-top: 1px solid #EAEAEA;
+    margin-top: 30px;
+    padding-top: 20px;
 }

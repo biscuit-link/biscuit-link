@@ -13,6 +13,9 @@ $router = new AltoRouter();
 
 // Index page mapping
 $router->map('GET', '/', 'BiscuitLinkController::displayIndex');
+// Docs
+$router->map('GET', '/docs', 'BiscuitLinkController::displayDoc');
+$router->map('GET', '/docs/[:docfile]', 'BiscuitLinkController::displayDoc');
 
 // Hello World page
 $router->map('GET', '/hello', 'DefaultController::hello');
