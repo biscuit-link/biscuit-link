@@ -11,6 +11,9 @@
                 <li>
                     <a href="/docs">Getting Started</a>
                 </li>
+                <li>
+                    <a href="/docs/folder-structure">Folder Structure</a>
+                </li>
             </ul>
         </div>
         <div class="col-sm-9 col-xs-12 markdown-body">
