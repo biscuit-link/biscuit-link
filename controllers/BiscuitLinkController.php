@@ -3,54 +3,53 @@
 class BiscuitLinkController extends Controller
 {
 
-	const DEFAULT_TITLE = 'Biscuit Link - The PHP Framework for Everyone';
+    const DEFAULT_TITLE = 'Biscuit Link - The PHP Framework for Everyone';
 
-	/**
-	 * Main Pages
-	 */
+    /**
+     * Main Pages
+     */
+    public static function displayIndex()
+    {
+        $tpl = Template::create('biscuit/pages/index.tpl');
+        $tpl->assign('page_title', self::DEFAULT_TITLE);
+        $tpl->display();
+    }
 
-	public static function displayIndex()
-	{
-		$tpl = Template::create('biscuit/pages/index.tpl');
-		$tpl->assign('page_title', self::DEFAULT_TITLE);
-		$tpl->display();
-	}
+    /**
+     * Documentation Pages
+     */
+    private static $valid_docs = array(
+        'index' => 'Getting Started',
+        'folder-structure' => 'Folder Structure'
+    );
 
-	/**
-	 * Documentation Pages
-	 */
+    public static function displayDoc($doc_file = null)
+    {
+        $doc_file = trim($doc_file);
+        if (empty($doc_file))
+        {
+            $doc_file = 'index';
+        }
+        $page_title = self::get_doc_title($doc_file);
 
-	private static $valid_docs = array(
-		'index' => 'Getting Started'
-	);
+        $tpl = Template::create('biscuit/pages/docpage.tpl');
 
-	public static function displayDoc($doc_file = null)
-	{
-		$doc_file = trim($doc_file);
-		if (empty($doc_file))
-		{
-			$doc_file = 'index';
-		}
-		$page_title = self::get_doc_title($doc_file);
+        $markdown_page = MarkdownElement::get();
+        $file = 'docs/' . $doc_file;
+        $markdown_page->setFile($file);
+        $tpl->addElement('markdown_page', $markdown_page);
 
-		$tpl = Template::create('biscuit/pages/docpage.tpl');
+        $tpl->assign('page_title', $page_title . ' - Biscuit Link Documentation');
+        $tpl->display();
+    }
 
-		$markdown_page = MarkdownElement::get();
-		$file = 'docs/' . $doc_file;
-		$markdown_page->setFile($file);
-		$tpl->addElement('markdown_page', $markdown_page);
-
-		$tpl->assign('page_title', $page_title . ' - Biscuit Link Documentation');
-		$tpl->display();
-	}
-
-	private static function get_doc_title($doc_file)
-	{
-		if (isset(self::$valid_docs[$doc_file]))
-		{
-			return self::$valid_docs[$doc_file];
-		}
-		Request::redirect('/docs');
-		return null;
-	}
+    private static function get_doc_title($doc_file)
+    {
+        if (isset(self::$valid_docs[$doc_file]))
+        {
+            return self::$valid_docs[$doc_file];
+        }
+        Request::redirect('/docs');
+        return null;
+    }
 }
