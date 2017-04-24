@@ -42,7 +42,7 @@ $template->getString();
 
 ### Add an Element
 
-Elements are a big part of Biscuit Link, so adding an `Element` to a `Template` is supported from the core. Use the `addElement()` method to achieve this:
+[Elements](/docs/elements) are a big part of Biscuit Link, so adding an `Element` to a `Template` is supported from the core. Use the `addElement()` method to achieve this:
 ```php
 $template->addElement('elementID', $my_element);
 ```

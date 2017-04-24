@@ -17,6 +17,9 @@
                 <li>
                     <a href="/docs/templates">Templates</a>
                 </li>
+                <li>
+                    <a href="/docs/elements">Elements</a>
+                </li>
             </ul>
         </div>
         <div class="col-sm-9 col-xs-12 markdown-body">

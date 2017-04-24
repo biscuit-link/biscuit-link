@@ -21,7 +21,8 @@ class BiscuitLinkController extends Controller
     private static $valid_docs = array(
         'index' => 'Getting Started',
         'folder-structure' => 'Folder Structure',
-        'templates' => 'Templates'
+        'templates' => 'Templates',
+        'elements' => 'Elements'
     );
 
     public static function displayDoc($doc_file = null)
