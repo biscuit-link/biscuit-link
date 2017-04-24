@@ -37,6 +37,9 @@
                         <li>
                             <a href="/docs/folder-structure">Folder Structure</a>
                         </li>
+                        <li>
+                            <a href="/docs/templates">Templates</a>
+                        </li>
                         <!--
 <li role="separator" class="divider"></li>
 <li class="dropdown-header">Tutorials</li>

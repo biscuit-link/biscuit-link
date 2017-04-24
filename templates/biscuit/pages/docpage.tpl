@@ -14,6 +14,9 @@
                 <li>
                     <a href="/docs/folder-structure">Folder Structure</a>
                 </li>
+                <li>
+                    <a href="/docs/templates">Templates</a>
+                </li>
             </ul>
         </div>
         <div class="col-sm-9 col-xs-12 markdown-body">
