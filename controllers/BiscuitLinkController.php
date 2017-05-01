@@ -42,6 +42,7 @@ class BiscuitLinkController extends Controller
         $tpl->addElement('markdown_page', $markdown_page);
 
         $tpl->assign('page_title', $page_title . ' - Biscuit Link Documentation');
+        $tpl->assign('page_id', $doc_file);
         $tpl->display();
     }
 
