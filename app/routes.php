@@ -12,7 +12,10 @@ $router = new AltoRouter();
  */
 
 // Index page mapping
-$router->map('GET', '/', 'DefaultController::display', 'index');
+$router->map('GET', '/', 'BiscuitLinkController::displayIndex');
+// Docs
+$router->map('GET', '/docs', 'BiscuitLinkController::displayDoc');
+$router->map('GET', '/docs/[:docfile]', 'BiscuitLinkController::displayDoc');
 
 // Hello World page
 $router->map('GET', '/hello', 'DefaultController::hello');
@@ -35,7 +38,7 @@ function handleRouting(AltoRouter $router)
 	else
 	{
 		header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
-		$tpl = Template::create('pages/404.tpl');
+		$tpl = Template::create('biscuit/pages/404.tpl');
 		$tpl->display();
 	}
 }

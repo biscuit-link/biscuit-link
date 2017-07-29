@@ -1,0 +1,21 @@
+body {
+    overflow-y: scroll;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.main-title h1 {
+    font-size: 40pt;
+}
+
+.container.page-container {
+    margin-top: 45px;
+}
+
+footer {
+    border-top: 1px solid #EAEAEA;
+    margin-top: 30px;
+    padding-top: 20px;
+}
