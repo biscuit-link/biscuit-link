@@ -26,7 +26,8 @@ class BiscuitLinkController extends Controller
         'index' => 'Getting Started',
         'folder-structure' => 'Folder Structure',
         'templates' => 'Templates',
-        'elements' => 'Elements'
+        'elements' => 'Elements',
+        'installation' => 'Installation'
     );
 
     public static function displayDoc($doc_file = null)
