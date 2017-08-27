@@ -43,6 +43,9 @@
                         <li>
                             <a href="/docs/elements">Elements</a>
                         </li>
+                        <li>
+                            <a href="/docs/installation">Installation</a>
+                        </li>
                         <!--
 <li role="separator" class="divider"></li>
 <li class="dropdown-header">Tutorials</li>

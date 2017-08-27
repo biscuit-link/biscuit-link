@@ -19,6 +19,9 @@
                 </li>
                 <li data-page="elements">
                     <a href="/docs/elements">Elements</a>
+                </li>                
+                <li data-page="installation">
+                    <a href="/docs/installation">Installation</a>
                 </li>
             </ul>
         </div>
