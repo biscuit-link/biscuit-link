@@ -16,6 +16,9 @@ $router->map('GET', '/', 'BiscuitLinkController::displayIndex');
 // Docs
 $router->map('GET', '/docs', 'BiscuitLinkController::displayDoc');
 $router->map('GET', '/docs/[:docfile]', 'BiscuitLinkController::displayDoc');
+// Tutorials
+$router->map('GET', '/tutorials', 'BiscuitLinkController::displayTut');
+$router->map('GET', '/tutorials/[:tutfile]', 'BiscuitLinkController::displayTut');
 
 // Hello World page
 $router->map('GET', '/hello', 'DefaultController::hello');
