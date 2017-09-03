@@ -59,7 +59,7 @@
                        aria-expanded="false"><i class="fa fa-graduation-cap"></i> Tutorials <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#">Coming Soon...</a>
+                            <a href="/tutorials">Start Learning</a>
                         </li>
                     </ul>
                 </li>
